@@ -1,0 +1,31 @@
+{
+  "name": "qa-automation-framework",
+  "version": "1.0.0",
+   "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:api": "playwright test tests/api",
+    "test:e2e": "playwright test tests/e2e",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "test:allure": "allure serve allure-results",
+    "allure:generate": "allure generate allure-results --clean",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier . --write"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.0.0",
+    "ajv": "^8.17.1",
+    "allure-commandline": "^2.34.1",
+    "allure-playwright": "^3.3.1",
+    "dotenv": "^17.0.1",
+    "eslint": "^9.30.1",
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.35.1"
+  }
+}

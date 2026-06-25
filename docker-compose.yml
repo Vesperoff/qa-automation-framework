@@ -1,0 +1,7 @@
+services:
+  automation:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    environment:
+      ENV: dev
